@@ -1,0 +1,548 @@
+body{
+  font: 24px/1.9 Times;
+  padding:0;
+  margin: auto;
+  max-width: 1920px;
+  background: url("../img/background.png");
+  color:white;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #03122F;
+  border-radius: 10px;
+  border: white 1px solid;
+}
+
+  /* Global */
+  .container{
+    width:85%;
+    margin:auto;
+    word-wrap: break-word;
+    overflow:hidden;
+  }
+
+  ul{
+    margin:0;
+    padding:0;
+  }
+
+  .break {
+  flex-basis: 100%;
+  height: 30px;
+}
+
+  h1{
+    font-size: 50;
+  }
+
+  /* Header */
+  header{
+    background:black;
+    padding-top:10px;
+    min-height:75px;
+    border-bottom:#D9443E 3px solid;
+  }
+
+  header img{
+    width:500px;
+  }
+
+  header a{
+    color:white;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:28px;
+  }
+
+  header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+
+  header #title{
+    float:left;
+  }
+
+  header #title h1{
+    margin:0;
+  }
+
+  header nav{
+    float:right;
+    margin-top:10px;
+  }
+
+  header .current a{
+    color:#D9443E;
+    font-weight:bold;
+  }
+
+  header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+  }
+
+  /* showcase-home */
+  #showcase-home{
+    min-height: 500px;
+    background: url('../img/showcase.png') no-repeat 0 -560px;
+    background-size: auto;
+    text-shadow: 1px 1px black;
+  }
+
+  #showcase-home h1{
+    margin-top:100px;
+    font-size:35px;
+  }
+
+  /* about */
+  #about{
+    padding:15px;
+    color:#ffffff;
+    background: black;
+    border-bottom:white 3px double;
+    border-top:#D9443E 3px solid;
+  }
+
+  #about .container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #about .image-box{
+    background:black;
+    margin: 10px;
+    flex:1;
+  }
+
+  #about img{
+    border:white 3px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #about .box{
+    padding-right: 20px;
+    text-align: center;
+    flex:2;
+  }
+
+  /* story */
+  #story{
+    padding:15px;
+    color:#ffffff;
+    background-color:#03122F;
+    border-bottom:white 3px double;
+  }
+
+  #story .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #story .image-box{
+    width:
+  }
+
+  #story .image-box img{
+    width:600px;
+    border:white 3px solid;
+    background:black;
+    margin: 10px;
+  }
+
+  #story .box{
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  #story .button{
+    margin: 10px;
+    border:white 3px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  /* characters */
+  #characters{
+    min-height:auto;
+    background-color: #A50000;
+    border-bottom:white 3px double;
+    text-align:center;
+}
+
+  #characters .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #characters .box{
+    background:#03122F;
+    width: 300px;
+    height: 500px;
+    border: white 3px solid;
+    margin: auto;
+    color: white;
+    flex-direction: row;
+    text-shadow: 2px 2px black;
+    margin: 20px;
+  }
+
+  #characters h3{
+    font-size: 40px;
+    z-index: 2;
+  }
+
+  #characters p{
+    font-size: 30px;
+    font-style: bold;
+    z-index: 2;
+  }
+
+  #characters .overlay{
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+  }
+
+  #characters .overlay .c-button{
+    margin: 10px;
+    border: white 3px solid;
+    color: white;
+    background:#03122F;
+    align-items: center;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  #characters #shinji{
+    background:url('../img/Shinji_Profile.jpg') no-repeat 47%;
+    background-size: 223%;
+  }
+
+  #characters #shinji:hover{
+    transform: scale(1.05);
+  }
+
+  #characters #shinji:hover .overlay{
+    opacity: 1;
+  }
+
+  #characters #rei{
+    background:url('../img/Rei_Profile.jpg') no-repeat 48% 10%;
+    background-size:300%;
+  }
+
+  #characters #rei:hover .overlay{
+    opacity: 1;
+  }
+
+  #characters #rei:hover{
+    transform: scale(1.05);
+}
+
+  #characters #asuka{
+    background:url('../img/Asuka_Profile.jpg') no-repeat 50%;
+    background-size: 120%;
+  }
+
+  #characters #asuka:hover .overlay{
+    opacity: 1;
+  }
+
+  #characters #asuka:hover{
+    transform: scale(1.05);
+  }
+
+  #characters .button{
+    margin-bottom: 10px;
+    background:url('../img/eva_cast.png') no-repeat 0 ;
+    background-size:cover;
+    border:white 3px solid;
+    color: white;
+    max-width: 260px;
+    flex-grow:0;
+    flex-basis:50%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+  }
+
+  #characters .button:hover{
+    transform: scale(1.05);
+  }
+
+  /* video */
+  #video{
+    background-color:#03122F;
+    border-bottom:white 3px double;
+  }
+
+  #video .container{
+    margin-bottom: 30px;
+  }
+
+  #video .highlight{
+    color:#D9443E;
+    font-weight:bold;
+  }
+
+  /* footer */
+  footer{
+    padding:20px;
+    background-color:black;
+    text-align: center;
+  }
+
+
+  /*story-page*/
+
+
+  /* showcase-story */
+  #showcase-story{
+    min-height:500px;
+    background: url('../img/story_showcase.png') no-repeat 0 -550px;
+    background-size: 1920px;
+    border-bottom:#D9443E 3px solid;
+    text-shadow: 1px 1px black;
+  }
+
+  #showcase-story .container{
+    text-align: right;
+  }
+
+  #showcase-story h1{
+    margin-top:100px;
+    font-size:35px;
+  }
+
+  /* title-story */
+  #title-story{
+    padding:15px;
+    min-height: 75px;
+    text-align: center;
+    border-bottom:white 3px double;
+    background-color: black;
+    text-decoration: underline;
+  }
+
+  /* setting */
+  #setting{
+    border-bottom:white 3px double;
+    background: black;
+  }
+
+  #setting .container{
+    text-align: center;
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #setting h1{
+    width: 100%
+  }
+
+  #setting figure img{
+    border: white 3px solid;
+  }
+
+  #setting #Seele img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* episodes */
+  #episodes{
+    background: rgb(3,18,47);
+    background: linear-gradient(rgba(3,18,47,1) 50%, rgba(165,0,0,1) 70%);
+  }
+
+  #episode-intro{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  #episode-intro a{
+    color: #D9443E;
+    text-decoration: none;
+  }
+
+  #episode-intro a:hover{
+    text-decoration: underline;
+  }
+
+  #episodes .collapsible {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 3px white solid;
+  }
+
+  #episodes .active, .collapsible:hover {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 57%, rgba(255,255,255,1) 100%);
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: linear-gradient(60deg, rgba(0,0,0,1) 57%, rgba(255,255,255,1) 100%);
+    text-align: center;
+  }
+
+  .content img{
+    float: right;
+    margin:20px;
+  }
+
+
+  /* characters-page */
+
+
+  /* showcase-characters */
+  #showcase-characters{
+    min-height:500px;
+    max-width: 1960px;
+    background: url('../img/character_showcase.png') no-repeat 0 -200px;
+    background-size:cover;
+    border-bottom:#D9443E 3px solid;
+  }
+
+  #showcase-characters h1{
+    margin-top:100px;
+    font-size:35px;
+  }
+
+  /* character-background */
+
+  #character-background{
+    border-bottom:white 3px double;
+    background: black;
+  }
+
+  #character-background .container{
+    text-align: center;
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #character-background .container img{
+    border: white 3px solid;
+  }
+
+  /* character-info */
+
+  #character-info{
+    border-bottom:white 3px double;
+    background:#03122F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #character-info #characters-intro{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  #character-info #characters-intro a{
+    color: #D9443E;
+    text-decoration: none;
+  }
+
+  #character-info #characters-intro a:hover{
+    text-decoration: underline;
+  }
+
+  #character-info .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    flex-direction: row;
+    width: 310px;
+    height: 570px;
+    perspective: 1000px;
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .flip-card h1 {
+    padding: 20px;
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    background: url('../img/char/character-background-reverse.png') no-repeat 0;
+    background-size:cover;
+    transform: rotateY(180deg);
+  }

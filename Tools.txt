@@ -1,0 +1,9 @@
+Code Editor: Atom https://atom.io/
+
+Colour Gradients: https://cssgradient.io/
+
+Colours Used for Backgrounds: https://html-color-codes.info/colors-from-image/
+
+Learning to code: https://www.w3schools.com/css, https://www.w3schools.com/html, https://stackoverflow.com
+
+Designing Character Boxes: https://pixlr.com
